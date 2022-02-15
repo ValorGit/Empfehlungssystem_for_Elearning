@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmpfehlungUebersichtController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="715.0">
+         <children>
+            <HBox layoutY="14.0" prefHeight="25.0" prefWidth="600.0">
+               <children>
+                  <Label text="Lerner:">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="lernerLabel" contentDisplay="CENTER" prefHeight="25.0" prefWidth="126.0" text="Label" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <VBox layoutY="100.0" prefHeight="432.0" prefWidth="358.0" AnchorPane.topAnchor="100.0">
+               <children>
+                  <HBox prefHeight="41.0" prefWidth="358.0">
+                     <children>
+                        <Label text="Empfehlungen für Position:">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="aktuellePositionLabel" text="Label">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <ListView fx:id="listViewEmpfehlungAktuell" prefHeight="383.0" prefWidth="324.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets right="5.0" />
+                     </padding>
+                  </ListView>
+               </children>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+            </VBox>
+            <VBox layoutX="358.0" layoutY="100.0" prefHeight="432.0" prefWidth="358.0">
+               <children>
+                  <HBox prefHeight="41.0" prefWidth="358.0">
+                     <children>
+                        <Label text="Empfehlungen für Lernziel:">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="zielPositionLabel" text="Label">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <ListView fx:id="listViewEmpfehlungZiel" prefHeight="383.0" prefWidth="324.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" right="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </ListView>
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

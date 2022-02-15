@@ -1,0 +1,43 @@
+{
+  // Verwendet IntelliSense zum Ermitteln möglicher Attribute.
+  // Zeigen Sie auf vorhandene Attribute, um die zugehörigen Beschreibungen anzuzeigen.
+  // Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch RecommenderEngine",
+      "request": "launch",
+      "mainClass": "RecommenderEngine",
+      "projectName": "EmpfehlungssytemElearning_1ea079dd"
+    },
+    {
+      "type": "java",
+      "name": "Launch startseiteController",
+      "request": "launch",
+      "mainClass": "startseiteController",
+      "projectName": "EmpfehlungssytemElearning_1ea079dd"
+    },
+    {
+      "type": "java",
+      "name": "Launch DriverIntroductionExample",
+      "request": "launch",
+      "mainClass": "DriverIntroductionExample",
+      "projectName": "EmpfehlungssytemElearning_1ea079dd"
+    },
+    {
+      "type": "java",
+      "name": "Launch Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Launch App",
+      "request": "launch",
+      "vmArgs": "--module-path D:/Studium/javafx-sdk-17.0.2/lib --add-modules javafx.controls,javafx.fxml",
+      "mainClass": "App",
+      "projectName": "EmpfehlungssytemElearning_1ea079dd"
+    }
+  ]
+}
